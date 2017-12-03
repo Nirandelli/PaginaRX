@@ -1,0 +1,32 @@
+/*somos imagenes*/
+#qsomos {
+    margin: 10px 10px 10px 10px;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    }
+
+#qsomos:hover {
+	cursor: pointer;
+	-webkit-transform: scale(2, 2);
+    -ms-transform: scale(2, 2);
+    transform: scale(1.2, 1.2);
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    box-shadow: 0px 0px 0px #888888;
+    z-index: 1;
+}
+
+#somos{
+	border-radius: 7px 7px 7px 7px;
+-moz-border-radius: 7px 7px 7px 7px;
+-webkit-border-radius: 7px 7px 7px 7px;
+border: 2px solid #008080;
+
+-webkit-box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
+box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
+ text-align:justify;
+}
