@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['Correo'])) {
-  var_dump($POST);
+  var_dump($_POST);
   return
 
 // Edita las dos líneas siguientes con tu dirección de correo y asunto personalizados
