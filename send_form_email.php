@@ -207,7 +207,7 @@ if(isset($_POST['Correo'])) {
     echo "<script>window.location='contactanos.php'</script>";
 
   }else {
-    echo "<script>alert('Seleccne el captcha')</script>";
+    echo "<script>alert('Seleccne el captcha'); window.location='contactanos.php'</script>";
   }
 }
 
