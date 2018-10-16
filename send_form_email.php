@@ -1,11 +1,9 @@
 <?php
 if(isset($_POST['Correo'])) {
- /*$db->debug();
-echo "<pre>";
-	print_r($_POST);
-	echo "</pre>";*/
+  var_dump($POST);
+  return
 
-    // Edita las dos líneas siguientes con tu dirección de correo y asunto personalizados
+// Edita las dos líneas siguientes con tu dirección de correo y asunto personalizados
 
 $email_to = "Francisco.marv@rayosxyservicios.com.mx";
 // Francisco.marv@rayosxyservicios.com.mx
@@ -150,9 +148,9 @@ if(strlen($error_message) < 0) {
 }
 
 // enviando captchap
-$secret = '6LdMOXUUAAAAAEpVnVzCwLJCRSd_SOieLnfL9cWY'; // requerido
+$secret = "6LdMOXUUAAAAAEpVnVzCwLJCRSd_SOieLnfL9cWY"; // requerido
 
-$ip = $_SERVER['REMOTE_ADDR']; // requerido
+$ip = $_SERVER["REMOTE_ADDR"]; // requerido
 
 $var = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captchap&remoteip=$ip"); // requerido
 
