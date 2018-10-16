@@ -10,7 +10,7 @@ if(isset($_POST['Correo'])) {
 
   $responseGoogle = json_decode($var, true);
 
-  if (!$responseGoogle['success']) {
+  if ($responseGoogle['success']) {
     echo $responseGoogle;
   }else {
     echo "No pasa";
