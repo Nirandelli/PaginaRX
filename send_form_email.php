@@ -7,7 +7,8 @@ if(isset($_POST['Correo'])) {
   $ip = $_SERVER["REMOTE_ADDR"]; // requerido
 
   $var = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captchap&remoteip=$ip"); // requerido
-
+  var_dump($var);
+  echo $var;
   $responseGoogle = json_decode($var, true);
 
   if ($responseGoogle['success']) {
