@@ -1,13 +1,13 @@
 <?php
 if(isset($_POST['Correo'])) {
-
+  $captchap = $_POST['g-recaptcha-response'];
   // enviando captchap
   $secret = "6LdMOXUUAAAAAEpVnVzCwLJCRSd_SOieLnfL9cWY"; // requerido
 
   $ip = $_SERVER["REMOTE_ADDR"]; // requerido
 
   $var = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captchap&remoteip=$ip"); // requerido
-  var_dump($var);
+
   echo $var;
   $responseGoogle = json_decode($var, true);
 
@@ -16,7 +16,6 @@ if(isset($_POST['Correo'])) {
   }else {
     echo "No pasa";
   }
-  var_dump($var);
   return
 
 // Edita las dos líneas siguientes con tu dirección de correo y asunto personalizados
