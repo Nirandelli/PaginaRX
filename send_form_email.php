@@ -1,6 +1,21 @@
 <?php
 if(isset($_POST['Correo'])) {
-  var_dump($_POST);
+
+  // enviando captchap
+  $secret = "6LdMOXUUAAAAAEpVnVzCwLJCRSd_SOieLnfL9cWY"; // requerido
+
+  $ip = $_SERVER["REMOTE_ADDR"]; // requerido
+
+  $var = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captchap&remoteip=$ip"); // requerido
+
+  $responseGoogle = json_decode($var, true);
+
+  if (!$responseGoogle['success']) {
+    var_dump($responseGoogle);
+  }else {
+    echo "No pasa";
+  }
+
   return
 
 // Edita las dos líneas siguientes con tu dirección de correo y asunto personalizados
@@ -147,18 +162,6 @@ if(strlen($error_message) < 0) {
 
 }
 
-// enviando captchap
-$secret = "6LdMOXUUAAAAAEpVnVzCwLJCRSd_SOieLnfL9cWY"; // requerido
-
-$ip = $_SERVER["REMOTE_ADDR"]; // requerido
-
-$var = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captchap&remoteip=$ip"); // requerido
-
-$responseGoogle = json_decode($var, true);
-
-if (!$responseGoogle['success']) {
-  $error_message .= 'Sitio seguro.<br />';
-}
 //A partir de aqui se contruye el cuerpo del mensaje tal y como llegará al correo
 
 $email_message = "Contenido del Mensaje.\n\n";
@@ -216,12 +219,6 @@ $headers = 'From: '.$email_from."\r\n".
 
 
 echo "<script>window.location='contactanos.php'</script>";
-?>
-<!-- incluye aqui tu propio mensaje de Éxito
-
-Gracias! Nos pondremos en contacto contigo a la brevedad-->
-
-<?php
 
 }
 
