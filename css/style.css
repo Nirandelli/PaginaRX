@@ -1,0 +1,397 @@
+/*-------------------------------------------------------------ESTILO DEL BOTON NAV RESPONSIVO------------------------------------------------------------------*/
+.navbar .navbar-toggle {
+  border-color: #fff;  
+}
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+  background-color: #000;
+  border-color: #fff;
+  
+}
+.navbar .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+/*--------------------------------------------------------------------------------------------ESTILO NAVBAR------------------------------------------------------*/
+/*estilo nombre empresa*/
+.zsx {
+background-color:/*rgba(128, 0, 5, 0.85)*/#0c1a1e;
+-webkit-box-shadow: 0px 0px 13px 2px rgba(17,41,48,1);
+-moz-box-shadow: 0px 0px 13px 2px rgba(17,41,48,1);
+box-shadow: 0px 0px 13px 2px rgba(17,41,48,1);
+}
+.zsx h1{
+text-align:center;
+color:#fff;
+}
+
+.zsx h1{
+font-size:30px;
+font-family:'Buenard', serif;
+font-weight:bold;
+text-transform:inherit;
+margin: 0px auto 0px;
+text-shadow: 2px 2px 2px #398E84;
+-webkit-text-shadow: 2px 2px 2px #398E84;
+-moz-text-shadow: 2px 2px 2px #398E84;
+}
+ .zsx h3{
+text-align:right;
+color:#fff;
+ }
+
+.zsx h3{
+font-size: 20px;
+font-weight:lighter;
+margin: 0px auto 15px;
+}
+
+
+/*efecto al pasar el mouse sobre el navbar*/ 
+.navbar .navbar-nav > li > a:hover {
+ color: #fff;
+-webkit-box-shadow: 0 -30px 0 #cc0000 inset, 0 30px 0 #cc0000 inset, 0px 0 0 #cc0000 inset, -0px 0 0 #cc0000 inset;
+transition: 0.3s;
+}
+.navbar .navbar-nav > li > a {
+ color: #2d2d2d;
+}
+
+/*efecto para que se desplegue dropdown en modo-globo*/
+.dropdown:hover > .dropdown-menu {
+	opacity: 1 ;
+	top: 100% ;    
+	visibility: visible ;
+}
+  
+/*efecto de dropdown-menu globo*/
+  .dropdown-menu {    
+    top: 200%;
+    left: 0;    
+    visibility: hidden;
+    float: left;
+    display: block;
+    min-width: 160px;
+    padding: 5px 0;    
+    opacity: 0;
+	 position:absolute;
+    left:0;
+    top:36px;
+    z-index:1;
+    max-height:0;
+    overflow:hidden;
+    -webkit-transform:perspective(400) rotate3d(1,0,0,-90deg);
+    -webkit-transform-origin:50% 0;
+    -webkit-transition:350ms;
+    -moz-transition:350ms;
+    -o-transition:350ms;
+    transition:350ms;
+	
+  }
+
+/* transicion en seleccion del nav*/
+a, .navbar-toggle,.dropdown-menu{
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s; 
+}
+
+
+/*color del menu-dropdown*/
+.dropdown-menu > li > a:hover{      
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cc0000+0,cc0000+100;Red+Flat */
+background: rgb(204,0,0); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(204,0,0,1) 0%, rgba(204,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(204,0,0,1) 0%,rgba(204,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(204,0,0,1) 0%,rgba(204,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#cc0000',GradientType=0 ); /* IE6-9 */
+
+ color:white;
+}
+
+/*ubicacion imagen brand*/
+.navbar-brand > img{
+margin-top: -70px;
+}
+
+
+/*desplegue menu*/
+.nav .dropdown:hover > .dropdown-menu{
+  max-height:1000px;
+    -webkit-transform:perspective(400) rotate3d(0,0,0,0);
+}
+
+/*ubicacion imagen brand*/
+.caption > img{
+margin-top: 100px;
+}
+
+/*color navbar*/
+#navbar{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedce7+0,596a72+100;Grey+3D+%231 */
+background: rgb(206,220,231); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
+border: 0px solid rgba(136,138,138,1);
+
+-webkit-box-shadow: -1px 13px 13px -7px rgba(136,138,138,1);
+-moz-box-shadow: -1px 13px 13px -7px rgba(136,138,138,1);
+box-shadow: -1px 13px 13px -7px rgba(136,138,138,1);
+}
+/*color menu desplegable navbar*/
+.dropdown-menu {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#edefd2+0,edefd2+100 */
+background: rgb(237,239,210); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(237,239,210,1) 0%, rgba(237,239,210,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(237,239,210,1) 0%,rgba(237,239,210,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(237,239,210,1) 0%,rgba(237,239,210,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edefd2', endColorstr='#edefd2',GradientType=0 ); /* IE6-9 */
+
+-webkit-box-shadow: 0px 1px 4px 2px rgba(179,179,177,1);
+-moz-box-shadow: 0px 1px 4px 2px rgba(179,179,177,1);
+box-shadow: 0px 1px 4px 2px rgba(179,179,177,1);
+
+border-radius: 4px 4px 4px 4px;
+-moz-border-radius: 4px 4px 4px 4px;
+-webkit-border-radius: 4px 4px 4px 4px;
+border: 0px solid #9c9c9c;
+}
+/*------------------------------------------------------estilo footer---------------------------------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+footer { background-color:#0c1a1e; min-height:150px; font-family: 'Open Sans', sans-serif; }
+.footerleft { margin-top:50px; padding:0 36px; }
+.logofooter { margin-bottom:15px; font-size:25px; color:#fff; font-weight:700;}
+
+.footerleft p { color:#fff; font-size:12px !important; font-family: 'Open Sans', sans-serif; margin-bottom:15px;}
+.footerleft p i { width:20px; color:#999;}
+
+
+.paddingtop-bottom {  margin-top:50px;}
+.footer-ul { list-style-type:none;  padding-left:0px; margin-left:2px;}
+.footer-ul li { line-height:29px; font-size:12px;}
+.footer-ul li a { color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s; }
+.footer-ul i { margin-right:10px;}
+.footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#ff670f; }
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ 
+ 
+
+ 
+ .icon-ul { list-style-type:none !important; margin:0px; padding:0px;}
+ .icon-ul li { line-height:75px; width:100%; float:left;}
+ .icon { float:left; margin-right:5px;}
+ 
+ 
+ .copyright { min-height:40px; background-color:#000000;}
+ .copyright p { text-align:left; color:#FFF; padding:10px 0; margin-bottom:0px;}
+ .heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
+ .post p {  color:#FFF;}
+ .post p span { color:#8f8f8f;}
+ .bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
+ .bottom_ul li { float:left; line-height:40px;}
+ .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
+ .bottom_ul li a { color:#FFF;  font-size:12px;}
+/*estilo del logo ByN*/
+#efec{
+	-webkit-filter: grayscale(1);
+}
+#efec:hover{
+	-webkit-filter: grayscale(0);
+}
+#ensayos {
+	text-decoration:none;
+	color:#696969;
+}
+#ensayos:hover {
+	color:#ff670f;
+}
+/*------------------------------------------------------estilo index---------------------------------------------------------------------------------*/
+
+/*estilo nombre empresa*/
+#nom {
+	color: 	#5F9EA0; text-shadow: yellow 0.1em 0.1em 0.2em;
+}
+/*estilo carrusel1*/
+#myCarousel .nav a small
+{
+    display: block;
+}
+#myCarousel .nav
+{
+    background: #dcdcdc;
+}
+
+#myCarousel
+{
+	-webkit-box-shadow: 0px 0px 6px 2px rgba(179,179,177,0.75);
+-moz-box-shadow: 0px 0px 6px 2px rgba(179,179,177,0.75);
+box-shadow: 0px 0px 6px 2px rgba(179,179,177,0.75);
+}
+
+
+
+#textcaru{
+	opacity:0;
+	transition:all 0.5s ease-in-out;
+	float:right;
+}
+#textcaru:hover{
+	margin:-250px 0px 0px 0px;
+	opacity:1;
+	max-width: 100%;
+	color:#fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,000000+100&0.4+0,0.4+100 */
+	background: -moz-linear-gradient(45deg,  rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 1%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 1%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 1%,rgba(0,0,0,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#66000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border: 0px solid #9c9c9c;
+}
+.nav-justified > li > a
+{
+    border-radius: 0px;
+}
+.nav-pills>li[data-slide-to="0"].active a { background-color: #0c1a1e; }
+.nav-pills>li[data-slide-to="1"].active a { background-color: #0c1a1e; }
+.nav-pills>li[data-slide-to="2"].active a { background-color: #0c1a1e; }
+.nav-pills>li[data-slide-to="3"].active a { background-color: #0c1a1e; }
+.nav-pills>li[data-slide-to="4"].active a { background-color: #0c1a1e; }
+
+/*estilo del thumbnail*/
+.thumbnail {
+    position:relative;
+    overflow:hidden;
+}
+ 
+.caption {
+    position:absolute;
+    top:0;
+    right:0;
+    background:rgba(0,0 , 0, 0.175);
+    width:100%;
+    height:100%;
+    padding:2%;
+    display: none;
+    text-align:center;
+    color:#fff !important;
+    z-index:2;
+}
+
+/*estilo del eslogan*/
+
+#eslogan {
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+	
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+	border: 0px solid #1C1C1C;
+	
+	-webkit-box-shadow: 0px 0px 6px 2px rgba(179,179,177,0.75);
+-moz-box-shadow: 0px 0px 6px 2px rgba(179,179,177,0.75);
+box-shadow: 0px 0px 6px 2px rgba(179,179,177,0.75);
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%  {background-color: grey;}
+    25%  { background-color: #6d0019; }
+    50%  { background-color: #0c1a1e;}
+    100% { background-color: LightSlateGray;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%  {background-color: grey;}
+    25%  { background-color: #6d0019; }
+    50%  { background-color: #0c1a1e;}
+    100% { background-color: LightSlateGray;}
+}
+
+/*carrusel 2*/
+ #carousel_2-caption{
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #000;
+    text-align: center;
+    text-shadow: none;
+    //text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+#controllers_2{
+	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #000;
+    text-align: center;
+    text-shadow: none;
+    //text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+#fondocarrusel2{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5e5e5+1,ffffff+23,e5e5e5+50,ffffff+78,e5e5e5+100 */
+background: rgb(229,229,229); /* Old browsers */
+background: -moz-linear-gradient(45deg,  rgba(229,229,229,1) 1%, rgba(255,255,255,1) 23%, rgba(229,229,229,1) 50%, rgba(255,255,255,1) 78%, rgba(229,229,229,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgba(229,229,229,1) 1%,rgba(255,255,255,1) 23%,rgba(229,229,229,1) 50%,rgba(255,255,255,1) 78%,rgba(229,229,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  rgba(229,229,229,1) 1%,rgba(255,255,255,1) 23%,rgba(229,229,229,1) 50%,rgba(255,255,255,1) 78%,rgba(229,229,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+-webkit-box-shadow: 9px 9px 5px -6px rgba(0,0,0,0.45);
+-moz-box-shadow: 9px 9px 5px -6px rgba(0,0,0,0.45);
+box-shadow: 9px 9px 5px -6px rgba(0,0,0,0.45);
+}
+
+#carrucelIndex{
+border: 0px solid #000000;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100&0.65+0,0.65+100;Black+3D+%231 */
+background: -moz-linear-gradient(-45deg,  rgba(69,72,77,0.65) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(69,72,77,0.65) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(69,72,77,0.65) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a645484d', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+text-align: justify;
+}
+
+#service {
+	
+
+text-align: justify;
+}
+
+/*estilo de imagenes horario servicio y experiencia*/
+
+.box{width:300px; height:250px; border:1px solid #000; border-radius:2px; float:left; margin:20px 30px; max-width: 100%; }
+.box img{width:300px; height:250px; max-width: 100%;}
+.box .overlay{width:300px; height:250px; background:#000; margin:-250px 0px 0px 0px; opacity:0.5; max-width: 100%;}
+.box a{padding:5px 7px; border:1px solid #000; text-decoration:none; font-family:sans-serif; font-size:14px; margin:-140px 0px 0px 15px; display:inline-block; opacity:0; transition:all 0.5s ease-in-out;    cursor: pointer;/* z-index: 10000; */position: absolute;}
+
+
+
+.box .overlay:hover{opacity:0.1; transition:all 0.5s ease-in-out; width:300px; margin-left:50px; float:right;}
+.box:hover{box-shadow:0px 0px 10px #6A6A6A; border:1px solid #00DFDF;transition:all 0.5s ease-in-out;}
+.box:hover a{opacity:1; background:#FFFFFF; color:#000000; margin:-40px 0px 0px 15px;  border-radius:1px;}
+.box a:hover{border:1px solid #00DFDF;transition:all 0.5s ease-in-out; }
+
