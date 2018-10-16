@@ -15,7 +15,7 @@ if(isset($_POST['Correo'])) {
   }else {
     echo "No pasa";
   }
-
+  var_dump($var);
   return
 
 // Edita las dos líneas siguientes con tu dirección de correo y asunto personalizados
