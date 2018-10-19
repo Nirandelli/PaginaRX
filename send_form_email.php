@@ -152,17 +152,12 @@ if(isset($_POST['Correo'])) {
 
     $email_message = "Contenido del Mensaje.\n\n";
 
-
-
     function clean_string($string) {
 
       $bad = array("content-type","bcc:","to:","cc:","href");
 
       return str_replace($bad,"",$string);
-
     }
-
-
 
     $email_message .= "Empresa: ".clean_string($first_name)."\n";
 
@@ -203,8 +198,7 @@ if(isset($_POST['Correo'])) {
 
     @mail($email_to, $email_subject, $email_message, $headers);
 
-
-    echo "<script>window.location='contactanos.php'</script>";
+    echo "<script>alert('Su correo fue enviado con éxito.'); window.location='contactanos.php'</script>";
 
   }else {
     echo "<script>alert('Seleccione el captcha'); window.location='contactanos.php'</script>";
